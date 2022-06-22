@@ -23,12 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         //set root view controller
-        let searchNC = UINavigationController(rootViewController: SearchVC())
-        let favoritesNC = UINavigationController(rootViewController: FavoritesListVC())
-        let tabBar = UITabBarController()
-        tabBar.viewControllers = [searchNC, favoritesNC]
-        
-        window?.rootViewController = tabBar
+        window?.rootViewController = createTabBar()
         window?.makeKeyAndVisible()
         
     }
@@ -60,7 +55,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+    
+    func createSearchNavVC() -> UINavigationController {
+        let searchVC = SearchVC()
+        searchVC.title = "Search"
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        return UINavigationController(rootViewController: searchVC)
+    }
+    
+    func createFavoritesListNavVC() -> UINavigationController {
+        let favoritesListVC = FavoritesListVC()
+        favoritesListVC.title = "Search"
+        favoritesListVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites , tag: 1)
+        return UINavigationController(rootViewController: favoritesListVC)
+    }
 
-
+    func createTabBar() -> UITabBarController {
+        let tabBar = UITabBarController()
+        UITabBar.appearance().tintColor = .systemGreen
+        tabBar.viewControllers = [createSearchNavVC(), createFavoritesListNavVC()]
+        return tabBar
+    }
 }
 
