@@ -23,7 +23,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         //set root view controller
-        window?.rootViewController = ViewController()
+        let searchNC = UINavigationController(rootViewController: SearchVC())
+        let favoritesNC = UINavigationController(rootViewController: FavoritesListVC())
+        let tabBar = UITabBarController()
+        tabBar.viewControllers = [searchNC, favoritesNC]
+        
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
         
     }
