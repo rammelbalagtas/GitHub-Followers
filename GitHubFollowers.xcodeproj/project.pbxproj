@@ -60,7 +60,6 @@
 		6E337A8E2863B68600D623EB = {
 			isa = PBXGroup;
 			children = (
-				6E58C00F28650C7100DDBE70 /* Model */,
 				6E337A992863B68600D623EB /* GitHubFollowers */,
 				6E337A982863B68600D623EB /* Products */,
 			);
@@ -77,6 +76,7 @@
 		6E337A992863B68600D623EB /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				6E58C00F28650C7100DDBE70 /* Model */,
 				6E337AA82863B68900D623EB /* Info.plist */,
 				6E58C00E2865089200DDBE70 /* Support */,
 				6E58C00D2865083A00DDBE70 /* Extensions */,
