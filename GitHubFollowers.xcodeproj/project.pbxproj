@@ -16,6 +16,7 @@
 		6E337AB32863C59E00D623EB /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E337AB22863C59E00D623EB /* GFButton.swift */; };
 		6E337AB52863C8BA00D623EB /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E337AB42863C8BA00D623EB /* GFTextField.swift */; };
 		6E337AB7286496E300D623EB /* FollowersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E337AB6286496E300D623EB /* FollowersListVC.swift */; };
+		6E337AB928649CB600D623EB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E337AB828649CB600D623EB /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6E337AB22863C59E00D623EB /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		6E337AB42863C8BA00D623EB /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		6E337AB6286496E300D623EB /* FollowersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVC.swift; sourceTree = "<group>"; };
+		6E337AB828649CB600D623EB /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				6E337AB22863C59E00D623EB /* GFButton.swift */,
 				6E337AB42863C8BA00D623EB /* GFTextField.swift */,
 				6E337AB6286496E300D623EB /* FollowersListVC.swift */,
+				6E337AB828649CB600D623EB /* String+Ext.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				6E337AB32863C59E00D623EB /* GFButton.swift in Sources */,
 				6E337AAF2863BFCD00D623EB /* SearchVC.swift in Sources */,
 				6E337A9B2863B68600D623EB /* AppDelegate.swift in Sources */,
+				6E337AB928649CB600D623EB /* String+Ext.swift in Sources */,
 				6E337A9D2863B68600D623EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
