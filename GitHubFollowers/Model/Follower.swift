@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Follower: Codable {
+struct Follower: Codable, Hashable{
     var login: String
     var avatarUrl: String //Apple already convert field names from snake case to camel case and vice versa
 }

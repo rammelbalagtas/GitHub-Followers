@@ -84,7 +84,6 @@
 		6E337A992863B68600D623EB /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				6E58C01A2865E9E100DDBE70 /* Cells */,
 				6E58C0172865E47500DDBE70 /* Utilities */,
 				6E58C0142865126E00DDBE70 /* Managers */,
 				6E58C00F28650C7100DDBE70 /* Model */,
@@ -110,6 +109,7 @@
 		6E58C00C2865080600DDBE70 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				6E58C01A2865E9E100DDBE70 /* Cells */,
 				6E337ABE2864B23C00D623EB /* GFAlertVC.swift */,
 				6E337AB22863C59E00D623EB /* GFButton.swift */,
 				6E337AB42863C8BA00D623EB /* GFTextField.swift */,
