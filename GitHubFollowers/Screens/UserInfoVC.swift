@@ -16,6 +16,16 @@ class UserInfoVC: UIViewController {
         let doneButtton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
         navigationItem.rightBarButtonItem = doneButtton
         
+        NetworkManager.shared.getUserInfo(userName: username)
+        { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let user):
+                print(user.login)
+            case .failure(let error):
+                self.presentGFAlertOnMainThread(title: "Error", message: error.rawValue, buttonTitle: "OK")
+            }
+        }
     }
     
     @objc func dismissVC() {
