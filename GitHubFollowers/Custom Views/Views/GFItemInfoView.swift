@@ -26,11 +26,6 @@ class GFItemInfoView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    init() {
-//
-//        configure()
-//    }
-    
     func configure() {
         addSubview(symbolImageView)
         addSubview(titleLabel)
