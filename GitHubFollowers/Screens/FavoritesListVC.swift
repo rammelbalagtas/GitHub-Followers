@@ -56,6 +56,7 @@ class FavoritesListVC: GFDataLoadingVC {
         tableView.frame = view.bounds
         tableView.rowHeight = 80
         tableView.register(FavoriteCell.self, forCellReuseIdentifier: FavoriteCell.reuseId)
+        tableView.removeExcessCells()
     }
 
 }
