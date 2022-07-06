@@ -100,25 +100,26 @@ class FollowersListVC: UIViewController {
     }
     
     @objc func addButtonTapped() {
-//        showLoadingView()
-//        NetworkManager.shared.getUserInfo(userName: userName) { [weak self] result in
-//            guard let self = self else { return }
-//            switch result {
-//            case .success(let user):
-//                let favorite = Follower(login: user.login, avatarUrl: user.avatarUrl)
-//                PersistentManager.update(with: favorite, actionType: .add) { [weak self] error in
-//                    guard let self = self else { return }
-//                    guard let error = error else {
-//                        self.presentGFAlertOnMainThread(title: "Success", message: "User added to favorites", buttonTitle: "OK")
-//                        return
-//                    }
-//                    self.presentGFAlertOnMainThread(title: "Something is wrong", message: error.rawValue, buttonTitle: "OK")
-//                }
-//                break
-//            case .failure(let error):
-//                self.presentGFAlertOnMainThread(title: "Something is wrong", message: error.rawValue, buttonTitle: "OK")
-//            }
-//        }
+        showLoadingView()
+        NetworkManager.shared.getUserInfo(userName: userName) { [weak self] result in
+            guard let self = self else { return }
+            self.dismissLoadingView()
+            switch result {
+            case .success(let user):
+                let favorite = Follower(login: user.login, avatarUrl: user.avatarUrl)
+                PersistentManager.update(with: favorite, actionType: .add) { [weak self] error in
+                    guard let self = self else { return }
+                    guard let error = error else {
+                        self.presentGFAlertOnMainThread(title: "Success", message: "User added to favorites", buttonTitle: "OK")
+                        return
+                    }
+                    self.presentGFAlertOnMainThread(title: "Something is wrong", message: error.rawValue, buttonTitle: "OK")
+                }
+                break
+            case .failure(let error):
+                self.presentGFAlertOnMainThread(title: "Something is wrong", message: error.rawValue, buttonTitle: "OK")
+            }
+        }
     }
 
 }
