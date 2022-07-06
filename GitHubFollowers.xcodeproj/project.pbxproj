@@ -238,6 +238,7 @@
 		6E58C022286A11C600DDBE70 /* Text Fields */ = {
 			isa = PBXGroup;
 			children = (
+				6E337AB42863C8BA00D623EB /* GFTextField.swift */,
 			);
 			path = "Text Fields";
 			sourceTree = "<group>";
@@ -247,7 +248,6 @@
 			children = (
 				6E337ABA28649F2200D623EB /* GFTitleLabel.swift */,
 				6E337ABC2864AFD400D623EB /* GFBodyLabel.swift */,
-				6E337AB42863C8BA00D623EB /* GFTextField.swift */,
 				6E58C02C286BA64900DDBE70 /* GFSecondaryTitleLabel.swift */,
 			);
 			path = Label;
